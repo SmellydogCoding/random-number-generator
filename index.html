@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en-us" >
+	<head>
+		<meta charset="utf-8">
+    <title>Random Number Generator</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+	<body>
+		<div id="current">
+			<p id="number">0</p>
+		</div>
+		<form>
+			<label for="maximum">Maximum Number:</label>
+			<input id="maximum" type="number" min="1" value="1" required>
+			<label for="reserve">Exclude Number(s):</label>
+			<input id="reserve" type="text" pattern="^[0-9|,]*$" title="Enter comma seperated numbers.">
+		</form>
+		<div>
+			<button id="oops">Remove Last Number</button>
+			<button id="button">Pick Random Number</button>
+			<button id="reset">Reset Number List</button>
+		</div>
+    <label id="picked" class="hidden">
+			<span>Picked: </span>
+			<br class="hidden">
+      <p id="pickedList"></p>
+    </label>
+    <footer>
+  		<p>&copy; 2018
+  			<a href="http://smellydogcoding.com">Smellydog Coding</a>
+  		</p>
+    </footer>
+      <script src="app.js"></script>
+  </body>
+</html>
