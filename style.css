@@ -123,6 +123,8 @@ footer a {
   color: #337733;
 }
 
+/* Media Queries */
+
 @media screen and (max-width: 768px) {
 	#current {
 		margin-top: -1.5rem;
