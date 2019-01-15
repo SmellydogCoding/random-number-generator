@@ -26,10 +26,14 @@
       <p id="pickedList"></p>
     </label>
     <footer>
-  		<p>&copy; 2018
+  		<p>&copy; <span id="currentYear"></span>
   			<a href="http://smellydogcoding.com">Smellydog Coding</a>
   		</p>
     </footer>
       <script src="app.js"></script>
+      <script type="text/javascript">
+      	const currentYear = new Date().getFullYear()
+      	document.getElementById('currentYear').innerHTML = currentYear
+      </script>
   </body>
 </html>
